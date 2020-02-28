@@ -1,6 +1,86 @@
-.container {
+header{
+	margin-top: 15px;
+	display: flex;
+	width: 100%;
 
+	div{
+		width: 65%;
+	}
+
+	nav{
+		
+		a{
+			margin: 5px;
+		}
+
+		.inverted-biscay{
+			padding:10px 45px;
+			background-color:@White;
+			color: @Biscay;
+			border:2px solid @Biscay;
+			text-decoration: none;
+			.button-radius(5px);
+		}
+
+		.biscay{
+			padding: 10px 45px;
+			background-color: @Biscay;
+			color: @White;
+			text-decoration: none;
+			.button-radius(5px);
+			}
+	}
+}
+
+.container {
+	display: flex;
+	max-width: 800px;
 	.hide-h1{
 		display: none;
+	}
+	section {
+		width: 400px;
+	}
+}
+
+footer{
+	display: flex;
+	padding: 15px 0;
+	background-color: #F5F5F5;
+	width: 100%;
+	align-items: center;
+
+	nav{
+		display: flex;
+		width: 33%;
+		margin: 0 10px;
+		a{
+			text-decoration: none;
+			margin: 5px;
+		}
+
+		.coal-mine{
+			color: @MineShaft;
+			font-weight: bold;
+
+			&:visited {
+				color: @MineShaft;
+			}
+		}
+
+	}
+
+	.icons {
+		width: 33%;
+		justify-content: flex-end;
+	}
+
+
+	p{
+		display: flex;
+		font-size: 16px;
+
+		width: 33%;
+		justify-content: center;
 	}
 }
