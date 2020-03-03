@@ -1,0 +1,285 @@
+@font-face {
+  font-family: "SF-Pro-Text";
+  src: url('../fonts/SF-Pro-Text-Regular.otf');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  font-family: SF-Pro-Text;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 24;
+}
+p {
+  font-size: 20px;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  margin: 25px 0;
+  display: flex;
+  width: 100%;
+}
+header div {
+  width: 65%;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  header div {
+    display: none;
+  }
+}
+header nav a {
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px 45px;
+}
+header nav .inverted-biscay {
+  background-color: #FFFFFF;
+  color: #173F5F;
+  border: 2px solid #173F5F;
+}
+header nav .biscay {
+  background-color: #173F5F;
+  color: #FFFFFF;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    order: 3;
+  }
+}
+.container {
+  display: flex;
+}
+.container h2 {
+  font-size: 60px;
+}
+.container h3 {
+  font-size: 30px;
+}
+.container h4 {
+  font-size: 25px;
+  margin: 10px;
+}
+.container h4 span i {
+  color: red;
+}
+.container p {
+  margin: 20px 0;
+}
+.container p span {
+  font-weight: bold;
+}
+.container .hide-h1 {
+  display: none;
+}
+.container section {
+  width: 50%;
+  margin: 0 50px;
+}
+.container section a {
+  margin: 20px 0 0 0;
+  color: #FFFFFF;
+  background-color: #ED553B;
+  text-decoration: none;
+  padding: 10px 45px;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .container section a {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .container section {
+    width: 100%;
+    margin: 0 0;
+  }
+  .container section .hide-img {
+    display: none;
+  }
+  .container section img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    order: 2;
+  }
+}
+footer {
+  display: flex;
+  padding: 15px 0;
+  background-color: #F5F5F5;
+  width: 100%;
+  align-items: center;
+}
+footer nav {
+  display: flex;
+  width: 33%;
+  margin: 0 10px;
+}
+footer nav a {
+  text-decoration: none;
+  margin: 5px;
+}
+footer nav .coal-mine {
+  color: #242424;
+  font-weight: bold;
+}
+footer nav .coal-mine:visited {
+  color: #242424;
+}
+footer .icons {
+  width: 33%;
+  justify-content: flex-end;
+}
+footer p {
+  display: flex;
+  font-size: 16px;
+  width: 33%;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  footer {
+    display: none;
+  }
+}
