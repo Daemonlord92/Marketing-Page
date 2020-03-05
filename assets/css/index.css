@@ -147,6 +147,10 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
 header {
   margin: 25px 0;
   display: flex;
@@ -156,10 +160,19 @@ header div {
   width: 65%;
   margin-bottom: 20px;
 }
+@media (max-width: 920px) {
+  header div {
+    width: 40%;
+  }
+}
 @media (max-width: 500px) {
   header div {
     display: none;
   }
+}
+header nav {
+  display: flex;
+  flex-wrap: wrap;
 }
 header nav a {
   margin: 5px;
@@ -167,14 +180,31 @@ header nav a {
   border-radius: 5px;
   padding: 10px 45px;
 }
+@media (max-width: 500px) {
+  header nav a {
+    width: 100%;
+    text-align: center;
+  }
+}
 header nav .inverted-biscay {
   background-color: #FFFFFF;
   color: #173F5F;
   border: 2px solid #173F5F;
 }
+@media (max-width: 500px) {
+  header nav .inverted-biscay {
+    color: #ED553B;
+    border: 2px solid #ED553B;
+  }
+}
 header nav .biscay {
   background-color: #173F5F;
   color: #FFFFFF;
+}
+@media (max-width: 500px) {
+  header nav .biscay {
+    background-color: #ED553B;
+  }
 }
 @media (max-width: 500px) {
   header nav {
@@ -192,12 +222,20 @@ header nav .biscay {
 .container h2 {
   font-size: 60px;
 }
+@media (max-width: 500px) {
+  .container h2 {
+    font-size: 40px;
+    font-weight: bold;
+    width: 70%;
+  }
+}
 .container h3 {
   font-size: 30px;
+  margin: 20px 0;
 }
 .container h4 {
   font-size: 25px;
-  margin: 10px;
+  margin: 20px 0;
 }
 .container h4 span i {
   color: red;
@@ -211,12 +249,19 @@ header nav .biscay {
 .container .hide-h1 {
   display: none;
 }
+@media (max-width: 500px) {
+  .container .hide-h1 {
+    display: flex;
+    margin: 15px auto;
+  }
+}
 .container section {
   width: 50%;
   margin: 0 50px;
 }
 .container section a {
-  margin: 20px 0 0 0;
+  font-weight: bold;
+  margin: 40px 0;
   color: #FFFFFF;
   background-color: #ED553B;
   text-decoration: none;
@@ -231,10 +276,12 @@ header nav .biscay {
 @media (max-width: 500px) {
   .container section {
     width: 100%;
-    margin: 0 0;
+    margin: 0 auto;
   }
   .container section .hide-img {
+    width: 0px;
     display: none;
+    visibility: hidden;
   }
   .container section img {
     display: none;
@@ -242,6 +289,7 @@ header nav .biscay {
 }
 @media (max-width: 500px) {
   .container {
+    flex-wrap: wrap;
     order: 2;
   }
 }
