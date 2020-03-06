@@ -218,7 +218,7 @@ header nav .biscay {
 }
 .container {
   display: flex;
-  margin: 15px auto;
+  margin: 50px auto;
 }
 .container h2 {
   font-size: 60px;
@@ -298,6 +298,7 @@ header nav .biscay {
   }
 }
 footer {
+  margin-top: 25px;
   display: flex;
   padding: 15px 0;
   background-color: #F5F5F5;
