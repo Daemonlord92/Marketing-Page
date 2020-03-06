@@ -1,4 +1,4 @@
 # Marketing-Page
 
 
-https://bwptpt-use-my-tech-stuff-2.github.io/Marketing-Page/
+https://marketing-page-3pz3ah603.now.sh/
