@@ -1,0 +1,39 @@
+.container-about {
+display: flex;
+flex-wrap: wrap;
+max-width: 800px;
+margin: 25px auto;
+	
+	.about-project{
+		width: 100%;
+		margin: 1em;
+		h1{
+			margin: 15px 0;
+		}
+		p{
+			margin: 10px 0;
+		}
+		li{
+			margin: 5px 0;
+		}
+	}
+	section{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		border: 2px solid @Biscay;
+		justify-content: center;
+		div{
+			align-content: center;
+			width: 30%;
+			margin: 10px;
+
+			h2{
+				font-size: 20px;
+			}
+			img{
+				.button-radius(25px);
+			}				
+		}
+	}
+}

@@ -331,3 +331,40 @@ footer p {
     display: none;
   }
 }
+.container-about {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 25px auto;
+}
+.container-about .about-project {
+  width: 100%;
+  margin: 1em;
+}
+.container-about .about-project h1 {
+  margin: 15px 0;
+}
+.container-about .about-project p {
+  margin: 10px 0;
+}
+.container-about .about-project li {
+  margin: 5px 0;
+}
+.container-about section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #173F5F;
+  justify-content: center;
+}
+.container-about section div {
+  align-content: center;
+  width: 30%;
+  margin: 10px;
+}
+.container-about section div h2 {
+  font-size: 20px;
+}
+.container-about section div img {
+  border-radius: 25px;
+}
